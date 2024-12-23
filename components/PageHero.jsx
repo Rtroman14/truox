@@ -1,11 +1,18 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function PageHero({ title, subheading = "" }) {
     return (
-        <div className="relative grid bg-primary">
+        <div className="relative grid">
+            <Image
+                src="/images/water-background.jpg"
+                alt="Water Splash"
+                fill
+                className="object-cover"
+            />
+
             <div className="z-10 md:p-36 py-20 px-10 space-y-5">
-                <h1 className="text-center text-5xl font-semibold tracking-tight text-white [text-wrap:balance] sm:text-6xl md:text-7xl">
-                    <span className="bg-gradient-to-b from-white to-white bg-clip-text text-transparent">
+                <h1 className="text-center text-5xl font-semibold tracking-tight [text-wrap:balance] sm:text-6xl md:text-7xl">
+                    <span className="bg-gradient-to-b from-gray-500 to-black bg-clip-text text-transparent">
                         {title}
                     </span>
                 </h1>

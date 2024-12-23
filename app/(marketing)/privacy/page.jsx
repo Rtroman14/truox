@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "CryptoLyte | Privacy",
+    title: "Truox | Privacy",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

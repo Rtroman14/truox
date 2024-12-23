@@ -1,7 +1,7 @@
 import { guides } from "../variables";
 
 export const metadata = {
-    title: "CryptoLyte | Training Guides",
+    title: "Truox | Training Guides",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

@@ -1,15 +1,15 @@
 import PageHero from "@/components/PageHero";
-import ContactForm from "./_components/ContactForm";
+import ContactForm from "@/components/ContactForm";
 import Calendly from "../../../components/Calendly";
 
 export const metadata = {
-    title: "CryptoLyte | Contact",
+    title: "Truox | Contact",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 
 export default function ContactPage() {
     return (
-        <div className="mt-[70px]">
+        <div className="mt-[70px] relative">
             <PageHero title="Contact" />
 
             <section className="py-20 sm:py-28 flex flex-col items-center justify-center container">

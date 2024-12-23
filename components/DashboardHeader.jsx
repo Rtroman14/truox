@@ -40,7 +40,7 @@ import {
 
 const tabs = [
     {
-        title: "Cryptolyte System Sizing & Controller Configuration",
+        title: "Truox System Sizing & Controller Configuration",
         slug: "",
         icon: <CogIcon className="mr-2 h-5 w-5" />,
         children: [

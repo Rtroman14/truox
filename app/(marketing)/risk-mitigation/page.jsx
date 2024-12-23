@@ -7,7 +7,7 @@ import { CheckBadgeIcon, DocumentCheckIcon, ShieldCheckIcon } from "@heroicons/r
 import AlvaroQuote from "@/components/AlvaroQuote";
 
 export const metadata = {
-    title: "CryptoLyte | Risk Mitigation",
+    title: "Truox | Risk Mitigation",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 const biofilmImages = [

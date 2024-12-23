@@ -31,41 +31,16 @@ import Logo from "./Logo";
 
 const links = [
     {
-        title: "Recreational Water Illness (RWI)",
-        href: "/recreational-water-illness",
+        name: "Home",
+        href: "/",
     },
     {
-        title: "Risk Mitigation",
-        href: "/risk-mitigation",
+        name: "Food",
+        href: "/food",
     },
     {
-        title: "Remediating RWI",
-        href: "/remediating-rwi",
-    },
-    {
-        title: "Indoor Air & Water Quality",
-        href: "/indoor-water-and-air-quality",
-    },
-    {
-        title: "Videos",
-        href: "/videos",
-    },
-    {
-        title: "Blog",
-        href: "/blog",
-    },
-    {
-        title: "FAQs",
-        href: "/faqs",
-    },
-    {
-        title: "Downloads",
-        href: "/downloads",
-    },
-
-    {
-        title: "Distributor Portal",
-        href: "/dashboard",
+        name: "Energy",
+        href: "/energy",
     },
 ];
 
@@ -86,12 +61,12 @@ const menuItems = [
             },
             {
                 title: "Food",
-                href: "#",
+                href: "/food",
                 description: "",
             },
             {
                 title: "Energy",
-                href: "#",
+                href: "/energy",
                 description: "",
             },
         ],
@@ -151,12 +126,12 @@ export default function Navbar({ customer }) {
                                         </SheetTitle>
                                     </SheetHeader>
                                     {links.map((link) => (
-                                        <SheetClose asChild key={link.title}>
+                                        <SheetClose asChild key={link.name}>
                                             <Link
                                                 href={link.href}
                                                 className="flex items-center p-1"
                                             >
-                                                <span>{link.title}</span>
+                                                <span>{link.name}</span>
                                             </Link>
                                         </SheetClose>
                                     ))}

@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import Banner from "@/components/Banner";
 
 export const metadata = {
-    title: "CryptoLyte | Remediating RWI",
+    title: "Truox | Remediating RWI",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

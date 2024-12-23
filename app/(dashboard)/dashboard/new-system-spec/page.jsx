@@ -3,7 +3,7 @@ import PerformanceExpectationsTable from "@/components/PerformanceExpectationsTa
 import { fetchCustomer } from "@/app/actions";
 
 export const metadata = {
-    title: "CryptoLyte | Dashboard",
+    title: "Truox | Dashboard",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ContactFormSection from "@/components/ContactFormSection";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
     return (
@@ -149,7 +150,16 @@ export default function Home() {
             {/* Contact Form Section */}
             <section className="bg-[#3474BE] text-white py-20 relative">
                 <Image src="/images/pool-blue-overlay.jpg" alt="Water Splash" fill />
-                <ContactFormSection />
+                {/* <ContactFormSection /> */}
+
+                <div className="relative container mx-auto px-4 max-w-2xl">
+                    <h2 className="text-center text-4xl font-bold mb-12">START BREATHE EZ™ FREE</h2>
+
+                    <ContactForm
+                        classNames=""
+                        btnClassNames="bg-white text-black hover:bg-gray-100"
+                    />
+                </div>
             </section>
         </main>
     );

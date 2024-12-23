@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { cn } from "@/lib/utils";
 
 import {
     Form,
@@ -29,7 +30,7 @@ const contactFormSchema = z.object({
     message: z.string().max(500, { message: "500 character max" }),
 });
 
-export default function ContactForm() {
+export default function ContactForm({ classNames = "border", btnClassNames = "" }) {
     const { toast } = useToast();
     const form = useForm({
         resolver: zodResolver(contactFormSchema),
@@ -73,7 +74,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="mx-auto shadow border rounded-lg p-6">
+        <div className={cn(classNames, "mx-auto shadow rounded-lg p-6")}>
             <div>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4">
@@ -174,7 +175,11 @@ export default function ContactForm() {
                                 )}
                             />
                         </div>
-                        <Button type="submit" className="w-full" disabled={isSubmitting}>
+                        <Button
+                            type="submit"
+                            className={cn(btnClassNames, "w-full")}
+                            disabled={isSubmitting}
+                        >
                             {isSubmitting ? "Submitting..." : "Submit"}
                         </Button>
                     </form>

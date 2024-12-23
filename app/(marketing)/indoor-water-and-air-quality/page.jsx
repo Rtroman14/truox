@@ -10,7 +10,7 @@ import PageHero from "@/components/PageHero";
 import Banner from "@/components/Banner";
 
 export const metadata = {
-    title: "CryptoLyte | Indoor Water and Air Quality",
+    title: "Truox | Indoor Water and Air Quality",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

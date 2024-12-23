@@ -43,7 +43,7 @@ export async function emailContactForm(values) {
         const { data, error } = await resend.emails.send({
             from: "Roy <roy@alerts.truox.com>",
             to: ["ryan@truox.com"],
-            subject: "Cryptolyte Website Lead",
+            subject: "Truox Website Lead",
             react: ContactFormEmail({
                 name: values.name,
                 email: values.email,

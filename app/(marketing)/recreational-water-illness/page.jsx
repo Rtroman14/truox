@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 
 export const metadata = {
-    title: "CryptoLyte | Recreational Water Illness",
+    title: "Truox | Recreational Water Illness",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 

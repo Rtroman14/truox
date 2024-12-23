@@ -15,7 +15,7 @@ import {
 import LeadMagnetForm from "@/components/LeadMagnetForm";
 
 export const metadata = {
-    title: "CryptoLyte | Home",
+    title: "Truox | Home",
     description: "Kill 99.9% of Cryptosporidium under 30 minutes with CryptoLyte",
 };
 
