@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 // import Script from "next/script";
-// import PlausibleProvider from "next-plausible";
+import PlausibleProvider from "next-plausible";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                {/* <PlausibleProvider domain="truoxaquatics.com" trackLocalhost={false} /> */}
+                <PlausibleProvider domain="truox.com" trackLocalhost={false} />
             </head>
             <body className={inter.className}>
                 <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
